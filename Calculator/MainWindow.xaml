@@ -1,0 +1,40 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#00FF00CC">
+
+        <Button Content="%" HorizontalAlignment="Left" Margin="93,169,0,0" VerticalAlignment="Top" Width="75" Height="59" RenderTransformOrigin="0.257,0.531" Click="Button_Click_4"/>
+
+        <Button Content="Sq Rt" HorizontalAlignment="Left" Margin="93,91,0,0" VerticalAlignment="Top" Width="75" Height="59" RenderTransformOrigin="0.257,0.531" Click="Button_Click_3"/>
+        <Button Content="^" HorizontalAlignment="Left" Margin="93,248,0,0" VerticalAlignment="Top" Width="75" Height="59" RenderTransformOrigin="0.257,0.531" Click="Button_Click_21"/>
+        <Button Content="X!" HorizontalAlignment="Left" Margin="93,324,0,0" VerticalAlignment="Top" Width="75" Height="59" RenderTransformOrigin="0.257,0.531" Click="Button_Click_22"/>
+
+        <Button Content="4" HorizontalAlignment="Left" Margin="183,168,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_10"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="276,168,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_9"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="372,168,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_8"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="469,168,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_18"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="183,247,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_13"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="276,247,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_12"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="372,247,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_11"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="469,247,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_19"/>
+        <Button Content="." HorizontalAlignment="Left" Margin="183,323,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_14"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="276,323,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_15"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="372,323,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_16"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="469,323,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_20"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="183,90,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_5"/>
+        <Button Content="←" HorizontalAlignment="Left" Margin="372,42,0,0" VerticalAlignment="Top" Width="75" Height="43" RenderTransformOrigin="0.257,0.531" Click="Button_Click_2"/>
+
+        <Button Content="8" HorizontalAlignment="Left" Margin="276,90,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_6"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="372,90,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_7"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="469,90,0,0" VerticalAlignment="Top" Width="75" Height="60" Click="Button_Click_17"/>
+        <TextBox x:Name="text_box" HorizontalAlignment="Left" Height="43" Margin="93,42,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="264" FontSize="24" TextChanged="TextBox_TextChanged" Background="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" TextDecorations="{x:Null}" IsUndoEnabled="False" TextOptions.TextFormattingMode="Display" IsEnabled="False"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="555,90,0,0" VerticalAlignment="Top" Width="75" Height="293" Click="Button_Click_1"/>
+        <GroupBox Header="Calculator&#xD;&#xA;" HorizontalAlignment="Left" Height="390" Margin="51,14,0,0" VerticalAlignment="Top" Width="608"/>
+
+    </Grid>
+</Window>
